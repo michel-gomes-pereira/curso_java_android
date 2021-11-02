@@ -1,0 +1,1 @@
+Um jogo simples, onde ao clicar no botão "Play", as imagens vão mudando aleatoriamente. O jogador vence quando conseguir 3 imagens iguais. Em seguida ele poderá optar por "Fechar" ou "Reiniciar"
