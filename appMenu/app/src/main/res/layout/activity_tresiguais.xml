@@ -27,7 +27,7 @@
         android:drawableStart="@color/design_default_color_error"
         android:drawableBottom="@color/design_default_color_error"
         android:foregroundTint="#F30A0A"
-        android:text="Reiniciar"
+        android:text="Fechar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:rippleColor="#7C1F1F" />

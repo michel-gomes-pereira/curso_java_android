@@ -33,9 +33,14 @@
         android:id="@+id/contador"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="221dp"
         android:text="?"
-        tools:layout_editor_absoluteX="345dp"
-        tools:layout_editor_absoluteY="491dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btContar"
+        app:layout_constraintTop_toBottomOf="@+id/picture3" />
 
     <ImageView
         android:id="@+id/picture"
@@ -64,6 +69,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="379dp"
+        app:layout_constraintBottom_toTopOf="@+id/contador"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/picture2"
         app:layout_constraintTop_toTopOf="parent"
@@ -129,23 +136,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="100dp"
         android:layout_marginBottom="16dp"
         android:text="Pontos"
         app:layout_constraintBottom_toTopOf="@+id/pontosResultado"
-        app:layout_constraintEnd_toStartOf="@+id/txt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/picture7" />
-
-    <TextView
-        android:id="@+id/txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="50dp"
-        android:text="Será?"
-        app:layout_constraintEnd_toStartOf="@+id/btContar"
-        app:layout_constraintTop_toBottomOf="@+id/picture8" />
 
     <ImageView
         android:id="@+id/picture8"
@@ -198,4 +193,5 @@
         android:text="Reiniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,7 @@ public class cacaniquel extends AppCompatActivity {
     Button bt1,bt2,bt3,bt4;
 
     ImageView img1,img2,img3,img4,img5,img6,img7,img8,img9;
-    TextView texto1,texto2,texto3;
+    TextView texto2,texto3;
     int numeroPontos,seq,contador;
 
     public void sorteio(){
@@ -212,49 +212,57 @@ public class cacaniquel extends AppCompatActivity {
                 break;
         }
 
-        if((number1==number2 && number2==number3)|(number4==number5 && number5==number6)){
+        if(number1==number2 && number2==number3){
             //texto1.setText("Você Ganhou");
 
             numeroPontos=numeroPontos+1;
             texto2.setText(String.valueOf(numeroPontos));
 
-        }
+        }//horizontal
+        if(number4==number5 && number5==number6){
+            numeroPontos=numeroPontos+1;
+            texto2.setText(String.valueOf(numeroPontos));
+        }//horizontal
         if (number7==number8 && number7==number9){
             //texto1.setText("Você Ganhou");
             numeroPontos=numeroPontos+1;
             texto2.setText(String.valueOf(numeroPontos));
 
-        }
-        if (number7==number8 && number1==number9){
-            //texto1.setText("Você Ganhou");
-            numeroPontos=numeroPontos+1;
-            texto2.setText(String.valueOf(numeroPontos));
+        }//horizontal
 
-        }
         if (number1==number4 && number1==number7){
             //texto1.setText("Você Ganhou");
             numeroPontos=numeroPontos+1;
             texto2.setText(String.valueOf(numeroPontos));
 
-        }
-        if((number2==number5 && number2==number8)|(number3==number6 && number5==number9)){
+        }//vertical
+        if((number2==number5 && number2==number8)){
             //texto1.setText("Você Ganhou");
             numeroPontos=numeroPontos+1;
             texto2.setText(String.valueOf(numeroPontos));
 
+        }//vertical
+        if (number3==number6 && number3==number9){
+            numeroPontos=numeroPontos+1;
+            texto2.setText(String.valueOf(numeroPontos));
         }
         if(number1==number5 && number1==number9){
-           // texto1.setText("Você Ganhou");
+
+
+            //texto1.setText("Você Ganhou");
             numeroPontos=numeroPontos+1;
             texto2.setText(String.valueOf(numeroPontos));
 
-        }
+        }//diagonal
+
         if(number3==number5 && number3==number7){
            // texto1.setText("Você Ganhou");
             numeroPontos=numeroPontos+1;
             texto2.setText(String.valueOf(numeroPontos));
 
-        }
+        }//diagonal
+
+
         if( (number1==number4 && number1==number7) & (number2==number5 && number5 == number8)){
 
             seq=2;
@@ -285,13 +293,13 @@ public class cacaniquel extends AppCompatActivity {
 
 
         }
-        if( (number2==number5 && number1==number8) & (number1==number5 && number5 == number9)){
+        if( (number2==number5 && number2==number8) & (number1==number5 && number5 == number9)){
 
             seq=2;
 
 
         }
-        if( (number2==number5 && number1==number8) & (number3==number5 && number5 == number7)){
+        if( (number2==number5 && number2==number8) & (number3==number5 && number5 == number7)){
 
             seq=2;
 
@@ -329,7 +337,7 @@ public class cacaniquel extends AppCompatActivity {
         img7 = (ImageView) findViewById(R.id.picture7);
         img8 = (ImageView) findViewById(R.id.picture8);
         img9 = (ImageView) findViewById(R.id.picture9);
-        texto1 = (TextView) findViewById(R.id.txt);
+
         texto2= (TextView) findViewById(R.id.pontosResultado);
         texto3 = (TextView) findViewById(R.id.txt23);
 
